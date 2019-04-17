@@ -14,27 +14,22 @@
 
 ## Basic
 ```
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import { Input } from 'react-apollo-forms';
 
-import updateMutation from './update.gql';
+import mutation from './update.gql';
 
-export default class ColumnDetail extends Component {
-  const name = 'Barry Allen';
-
-  render() {
-    return (
-      <Input
-        mutation={updateMutation}
-        defaultValue={name}
-        variables={{
-          id: 1,
-        }}
-        valuePath="name"
-        mutateEvent="blur"
-      />
-    );
-  }
+export default function Hero() {
+  return (
+    <Input
+      mutation={mutation}
+      defaultValue="Barry Allen"
+      variables={{
+        id: 1,
+      }}
+      valuePath="name"
+      mutateEvent="blur"
+    />
+  );
 }
 ```

@@ -2,7 +2,7 @@ import React from 'react';
 import { Mutation } from 'react-apollo';
 import PropTypes from 'prop-types';
 
-export default function MutateButton({
+export default function Button({
   mutation,
   refetchQueries,
   update,

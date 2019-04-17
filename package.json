@@ -4,31 +4,50 @@
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "babel ./src -d lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Envisio/react-apollo-forms.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "apollo",
+    "forms",
+    "input",
+    "button",
+    "mutation"
+  ],
+  "setupFiles": [
+    "./src/setupTests.js"
+  ],
   "author": "s@zhso.net",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Envisio/react-apollo-forms/issues"
   },
-  "homepage": "https://github.com/Envisio/react-apollo-forms#readme",
+  "homepage": "https://envisio.github.io/react-apollo-forms/",
   "devDependencies": {
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-link": "^1.2.11",
+    "apollo-link-state": "^0.4.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "graphql-tag": "^2.10.1",
+    "jest": "^24.7.1",
+    "jest-cli": "^24.7.1",
+    "jsdom": "^14.0.0"
   },
   "dependencies": {
     "apollo-client": "^2.5.1",
@@ -36,7 +55,7 @@
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-apollo": "^2.5.3",
+    "react-apollo": "^2.5.4",
     "react-dom": "^16.8.6"
   }
 }
